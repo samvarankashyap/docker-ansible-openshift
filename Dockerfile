@@ -9,6 +9,9 @@ RUN dnf install -y git \
                    libffi-devel \
                    redhat-rpm-config \
                    openssl-devel \
-                   ansible
+                   ansible \
+                   pyOpenSSL \ 
+                   python-cryptography \
+                   python-lxml
 RUN git clone https://github.com/openshift/openshift-ansible
 WORKDIR "/openshift-ansible"
